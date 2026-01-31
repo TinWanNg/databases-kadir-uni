@@ -38,6 +38,7 @@ INSERT INTO Department (department_name, faculty_name, office_location) VALUES
 ('Electrical Engineering', 'Faculty of Engineering', 'Building F, Room 320'),
 ('Mechanical Engineering', 'Faculty of Engineering', 'Building G, Room 115'),
 ('Biomedical Engineering', 'Faculty of Life Sciences', 'Building H, Room 205'),
+('Civil Engineering', 'Faculty of Engineering', 'Building I, Room 405');
 
 -- FundingInstitution (10 rows)
 INSERT INTO FundingInstitution (institution_name, institution_type, country, contact_email) VALUES
