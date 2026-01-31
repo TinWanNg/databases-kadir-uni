@@ -70,7 +70,6 @@ CREATE TABLE Duty (
     duty_id SERIAL PRIMARY KEY,
     duty_name VARCHAR(150) NOT NULL,
     description VARCHAR(255),
-    time_spent DECIMAL(5,2) NOT NULL,
     project_id INTEGER NOT NULL
 );
 
@@ -87,6 +86,7 @@ CREATE TABLE Payment (
 CREATE TABLE WorksOn (
     employee_id INTEGER NOT NULL,
     duty_id INTEGER NOT NULL,
+    time_spent DECIMAL(5,2) NOT NULL,
     PRIMARY KEY (employee_id, duty_id)
 );
 

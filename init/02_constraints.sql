@@ -51,8 +51,8 @@ ALTER TABLE Deliverable
     ADD CONSTRAINT chk_deliverable_type CHECK (deliverable_type IN ('Report', 'Paper', 'Software')),
     ADD CONSTRAINT chk_deliverable_status CHECK (approval_status IN ('Pending', 'Approved', 'Rejected'));
 
-ALTER TABLE Duty
-    ADD CONSTRAINT chk_duty_time CHECK (time_spent >= 0);
+ALTER TABLE WorksOn
+    ADD CONSTRAINT chk_workson_time CHECK (time_spent >= 0);
 
 ALTER TABLE Payment
     ADD CONSTRAINT chk_payment_amount CHECK (amount > 0),
