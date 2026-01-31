@@ -47,7 +47,7 @@ CREATE TABLE Project (
 );
 
 -- Grant table
-CREATE TABLE Grant (
+CREATE TABLE "Grant" (
     grant_id SERIAL PRIMARY KEY,
     amount DECIMAL(12,2) NOT NULL,
     grant_status VARCHAR(30) NOT NULL,

@@ -18,6 +18,7 @@ A Docker-based local PostgreSQL database with pgAdmin management interface.
    - Login with:
      - Email: `admin@admin.com`
      - Password: `admin123`
+  - Alternatively, set a different one in ```docker-compose.yml```
 
 3. **Connect to PostgreSQL in pgAdmin:**
    - Click "Add New Server"

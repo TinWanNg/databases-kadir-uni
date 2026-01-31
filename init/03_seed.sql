@@ -66,7 +66,7 @@ INSERT INTO Project (pc_id, title, start_date, end_date, total_budget, status) V
 (6, 'Biodegradable Plastics', '2024-02-01', '2026-01-31', 620000.00, 'Active');
 
 -- Grant (10 rows)
-INSERT INTO Grant (amount, grant_status, project_id, institution_id) VALUES
+INSERT INTO "Grant" (amount, grant_status, project_id, institution_id) VALUES
 (850000.00, 'Paid', 1, 1),
 (600000.00, 'Paid', 2, 2),
 (600000.00, 'Approved', 2, 6),

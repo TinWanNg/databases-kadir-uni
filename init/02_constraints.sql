@@ -5,7 +5,7 @@
 ALTER TABLE Project
     ADD CONSTRAINT fk_project_pc FOREIGN KEY (pc_id) REFERENCES Employee(employee_id);
 
-ALTER TABLE Grant
+ALTER TABLE "Grant"
     ADD CONSTRAINT fk_grant_project FOREIGN KEY (project_id) REFERENCES Project(project_id),
     ADD CONSTRAINT fk_grant_institution FOREIGN KEY (institution_id) REFERENCES FundingInstitution(institution_id);
 
@@ -16,7 +16,7 @@ ALTER TABLE Duty
     ADD CONSTRAINT fk_duty_project FOREIGN KEY (project_id) REFERENCES Project(project_id);
 
 ALTER TABLE Payment
-    ADD CONSTRAINT fk_payment_grant FOREIGN KEY (grant_id) REFERENCES Grant(grant_id);
+    ADD CONSTRAINT fk_payment_grant FOREIGN KEY (grant_id) REFERENCES "Grant"(grant_id);
 
 ALTER TABLE WorksOn
     ADD CONSTRAINT fk_workson_employee FOREIGN KEY (employee_id) REFERENCES Employee(employee_id),
@@ -43,7 +43,7 @@ ALTER TABLE Project
 ALTER TABLE FundingInstitution
     ADD CONSTRAINT chk_institution_type CHECK (institution_type IN ('National', 'EU', 'Private'));
 
-ALTER TABLE Grant
+ALTER TABLE "Grant"
     ADD CONSTRAINT chk_grant_amount CHECK (amount > 0),
     ADD CONSTRAINT chk_grant_status CHECK (grant_status IN ('Approved', 'Paid', 'Pending'));
 
@@ -64,8 +64,8 @@ ALTER TABLE Transaction
 -- Indexes for performance
 CREATE INDEX idx_project_pc ON Project(pc_id);
 CREATE INDEX idx_project_status ON Project(status);
-CREATE INDEX idx_grant_project ON Grant(project_id);
-CREATE INDEX idx_grant_institution ON Grant(institution_id);
+CREATE INDEX idx_grant_project ON "Grant"(project_id);
+CREATE INDEX idx_grant_institution ON "Grant"(institution_id);
 CREATE INDEX idx_deliverable_project ON Deliverable(project_id);
 CREATE INDEX idx_duty_project ON Duty(project_id);
 CREATE INDEX idx_payment_grant ON Payment(grant_id);
