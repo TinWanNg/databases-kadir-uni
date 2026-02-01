@@ -83,7 +83,17 @@ INSERT INTO Deliverable (deliverable_name, deliverable_type, submission_date, ap
 ('Solar Efficiency Analysis', 'Paper', '2024-10-25', 'Approved', 7),
 ('BCI Prototype', 'Software', '2025-07-15', 'Pending', 8),
 ('Smart Grid Final Report', 'Report', '2024-04-01', 'Approved', 9),
-('Plastic Decomposition Study', 'Paper', '2025-09-10', 'Pending', 10);
+('Plastic Decomposition Study', 'Paper', '2025-09-10', 'Pending', 10),
+('AI Model Training Results', 'Report', '2025-12-15', 'Pending', 1),
+('Quantum Circuit Design', 'Paper', '2024-08-20', 'Approved', 2),
+('CRISPR Safety Protocol', 'Report', '2025-05-10', 'Approved', 3),
+('Network Optimization Tool', 'Software', '2026-01-20', 'Pending', 4),
+('Drone Flight Data Analysis', 'Report', '2024-11-30', 'Approved', 5),
+('Penetration Testing Report', 'Report', '2025-10-15', 'Pending', 6),
+('Solar Panel Performance Data', 'Report', '2024-06-18', 'Approved', 7),
+('Neural Signal Processing Paper', 'Paper', '2025-09-25', 'Pending', 8),
+('Grid Load Balancing Software', 'Software', '2024-02-28', 'Approved', 9),
+('Biodegradation Timeline Study', 'Paper', '2025-07-22', 'Approved', 10);
 
 INSERT INTO Duty (duty_name, description, project_id) VALUES
 ('Data Collection', 'Gather climate data from sensors', 1),
@@ -129,7 +139,19 @@ INSERT INTO ProjectField (project_id, field_id) VALUES
 (8, 5),
 (9, 8);
 
-INSERT INTO Transaction (project_id, purpose, amount, receiver) VALUES
+INSERT INTO Transaction (project_id, purpose, amount, re,
+(1, 'Cloud storage subscription', 3200, 'CloudData Solutions'),
+(1, 'Data collection sensors', 8700, 'SensorTech Ltd'),
+(2, 'Quantum simulation software', 12000, 'QuantumSoft Inc'),
+(3, 'Gene sequencing services', 18500, 'GenomicsLab Co'),
+(3, 'Petri dishes and cultures', 4200, 'LabSupply Direct'),
+(4, 'Training dataset licenses', 6800, 'DataMarket Inc'),
+(5, 'Drone batteries and chargers', 2400, 'PowerTech Solutions'),
+(6, 'Network security tools', 7300, 'CyberDefense Ltd'),
+(7, 'Installation equipment', 5600, 'GreenInstall Co'),
+(8, 'Medical-grade electrodes', 9200, 'MedicalSupply Plus'),
+(9, 'Smart meters', 14500, 'GridTech Supplies'),
+(10, 'Environmental testing kit', 3800, 'EcoTest Labs')ceiver) VALUES
 (1, 'Server hardware purchase', 15000, 'TechSupply Inc'),
 (2, 'Quantum computing equipment', 85000, 'Quantum Systems Ltd'),
 (3, 'Laboratory supplies', 12500, 'BioLab Suppliers'),
