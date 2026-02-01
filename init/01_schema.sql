@@ -38,7 +38,6 @@ CREATE TABLE Project (
     title VARCHAR(200) NOT NULL,
     start_date DATE NOT NULL,
     end_date DATE NOT NULL,
-    total_budget DECIMAL(12,2) NOT NULL,
     status VARCHAR(20) NOT NULL
 );
 

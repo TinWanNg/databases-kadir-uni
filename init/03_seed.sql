@@ -49,17 +49,17 @@ INSERT INTO FundingInstitution (institution_name, institution_type, country, con
 ('BioTech Ventures', 'Private', 'Netherlands', 'funding@biotechventures.nl'),
 ('Austrian Science Fund', 'National', 'Austria', 'office@fwf.ac.at');
 
-INSERT INTO Project (pc_id, title, start_date, end_date, total_budget, status) VALUES
-(1, 'AI for Climate Prediction', '2024-01-15', '2026-12-31', 850000.00, 'Active'),
-(2, 'Quantum Error Correction', '2023-06-01', '2026-05-31', 1200000.00, 'Active'),
-(3, 'CRISPR Gene Therapy', '2024-03-01', '2027-02-28', 950000.00, 'Active'),
-(10, 'Neural Network Optimization', '2025-01-01', '2027-12-31', 750000.00, 'Planned'),
-(7, 'Autonomous Drone Systems', '2023-09-01', '2025-08-31', 650000.00, 'Active'),
-(3, 'Cybersecurity Framework', '2024-07-01', '2026-06-30', 550000.00, 'Active'),
-(5, 'Solar Panel Efficiency', '2022-04-01', '2025-03-31', 480000.00, 'Active'),
-(8, 'Brain-Computer Interface', '2023-11-15', '2026-11-14', 920000.00, 'Active'),
-(2, 'Smart Grid Technology', '2021-05-01', '2024-04-30', 780000.00, 'Completed'),
-(6, 'Biodegradable Plastics', '2024-02-01', '2026-01-31', 620000.00, 'Active');
+INSERT INTO Project (pc_id, title, start_date, end_date, status) VALUES
+(1, 'AI for Climate Prediction', '2024-01-15', '2026-12-31', 'Active'),
+(2, 'Quantum Error Correction', '2023-06-01', '2026-05-31', 'Active'),
+(3, 'CRISPR Gene Therapy', '2024-03-01', '2027-02-28', 'Active'),
+(10, 'Neural Network Optimization', '2025-01-01', '2027-12-31', 'Planned'),
+(7, 'Autonomous Drone Systems', '2023-09-01', '2025-08-31', 'Active'),
+(3, 'Cybersecurity Framework', '2024-07-01', '2026-06-30', 'Active'),
+(5, 'Solar Panel Efficiency', '2022-04-01', '2025-03-31', 'Active'),
+(8, 'Brain-Computer Interface', '2023-11-15', '2026-11-14', 'Active'),
+(2, 'Smart Grid Technology', '2021-05-01', '2024-04-30', 'Completed'),
+(6, 'Biodegradable Plastics', '2024-02-01', '2026-01-31', 'Active');
 
 INSERT INTO "Grant" (amount, grant_status, project_id, institution_id) VALUES
 (850000.00, 'Paid', 1, 1),

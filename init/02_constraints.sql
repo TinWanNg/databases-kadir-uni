@@ -37,7 +37,6 @@ ALTER TABLE Employee
 
 ALTER TABLE Project
     ADD CONSTRAINT chk_project_dates CHECK (end_date >= start_date),
-    ADD CONSTRAINT chk_project_budget CHECK (total_budget <= 3000000),
     ADD CONSTRAINT chk_project_status CHECK (status IN ('Planned', 'Active', 'Completed'));
 
 ALTER TABLE FundingInstitution
