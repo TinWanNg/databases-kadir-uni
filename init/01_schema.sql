@@ -1,7 +1,6 @@
 -- Schema Definition
 -- Create tables in order to handle dependencies
 
--- Employee table (referenced by Project)
 CREATE TABLE Employee (
     employee_id SERIAL PRIMARY KEY,
     first_name VARCHAR(100) NOT NULL,
@@ -11,14 +10,13 @@ CREATE TABLE Employee (
     salary DECIMAL(10,2) NOT NULL
 );
 
--- Scientific Field table (referenced by Project)
+
 CREATE TABLE ScientificField (
     field_id SERIAL PRIMARY KEY,
     field_name VARCHAR(150) NOT NULL,
     description VARCHAR(255)
 );
 
--- Department table
 CREATE TABLE Department (
     department_id SERIAL PRIMARY KEY,
     department_name VARCHAR(150) NOT NULL,
@@ -26,7 +24,6 @@ CREATE TABLE Department (
     office_location VARCHAR(100)
 );
 
--- Funding Institution table (referenced by Grant)
 CREATE TABLE FundingInstitution (
     institution_id SERIAL PRIMARY KEY,
     institution_name VARCHAR(200) NOT NULL,
@@ -35,7 +32,6 @@ CREATE TABLE FundingInstitution (
     contact_email VARCHAR(150)
 );
 
--- Project table
 CREATE TABLE Project (
     project_id SERIAL PRIMARY KEY,
     pc_id INTEGER NOT NULL,
@@ -46,7 +42,6 @@ CREATE TABLE Project (
     status VARCHAR(20) NOT NULL
 );
 
--- Grant table
 CREATE TABLE "Grant" (
     grant_id SERIAL PRIMARY KEY,
     amount DECIMAL(12,2) NOT NULL,
@@ -55,7 +50,6 @@ CREATE TABLE "Grant" (
     institution_id INTEGER NOT NULL
 );
 
--- Deliverable table
 CREATE TABLE Deliverable (
     deliverable_id SERIAL PRIMARY KEY,
     deliverable_name VARCHAR(200) NOT NULL,
@@ -65,7 +59,6 @@ CREATE TABLE Deliverable (
     project_id INTEGER NOT NULL
 );
 
--- Duty table
 CREATE TABLE Duty (
     duty_id SERIAL PRIMARY KEY,
     duty_name VARCHAR(150) NOT NULL,
@@ -73,7 +66,6 @@ CREATE TABLE Duty (
     project_id INTEGER NOT NULL
 );
 
--- Payment table
 CREATE TABLE Payment (
     payment_id SERIAL PRIMARY KEY,
     amount DECIMAL(12,2) NOT NULL,
@@ -97,7 +89,6 @@ CREATE TABLE ProjectField (
     PRIMARY KEY (project_id, field_id)
 );
 
--- Transaction table
 CREATE TABLE Transaction (
     transaction_id SERIAL PRIMARY KEY,
     project_id INTEGER NOT NULL,
