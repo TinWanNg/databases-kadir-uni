@@ -54,8 +54,7 @@ ALTER TABLE WorksOn
     ADD CONSTRAINT chk_workson_time CHECK (time_spent >= 0);
 
 ALTER TABLE Payment
-    ADD CONSTRAINT chk_payment_amount CHECK (amount > 0),
-    ADD CONSTRAINT chk_payment_dates CHECK (actual_payment_date IS NULL OR actual_payment_date >= expected_payment_date);
+    ADD CONSTRAINT chk_payment_amount CHECK (amount > 0);
 
 ALTER TABLE Transaction
     ADD CONSTRAINT chk_transaction_amount CHECK (amount > 0);
