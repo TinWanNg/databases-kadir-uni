@@ -139,7 +139,17 @@ INSERT INTO ProjectField (project_id, field_id) VALUES
 (8, 5),
 (9, 8);
 
-INSERT INTO Transaction (project_id, purpose, amount, re,
+INSERT INTO Transaction (project_id, purpose, amount, receiver) VALUES
+(1, 'Server hardware purchase', 15000, 'TechSupply Inc'),
+(2, 'Quantum computing equipment', 85000, 'Quantum Systems Ltd'),
+(3, 'Laboratory supplies', 12500, 'BioLab Suppliers'),
+(4, 'GPU cluster for training', 45000, 'CloudCompute Services'),
+(5, 'Drone components', 8500, 'AeroTech Solutions'),
+(6, 'Security software licenses', 5500, 'SecureNet Corp'),
+(7, 'Solar panel materials', 22000, 'GreenEnergy Supply'),
+(8, 'EEG equipment', 18000, 'MedTech Devices'),
+(9, 'Grid monitoring sensors', 31000, 'SmartGrid Systems'),
+(10, 'Biodegradable polymers', 9500, 'EcoMaterials Ltd'),
 (1, 'Cloud storage subscription', 3200, 'CloudData Solutions'),
 (1, 'Data collection sensors', 8700, 'SensorTech Ltd'),
 (2, 'Quantum simulation software', 12000, 'QuantumSoft Inc'),
@@ -151,14 +161,4 @@ INSERT INTO Transaction (project_id, purpose, amount, re,
 (7, 'Installation equipment', 5600, 'GreenInstall Co'),
 (8, 'Medical-grade electrodes', 9200, 'MedicalSupply Plus'),
 (9, 'Smart meters', 14500, 'GridTech Supplies'),
-(10, 'Environmental testing kit', 3800, 'EcoTest Labs')ceiver) VALUES
-(1, 'Server hardware purchase', 15000, 'TechSupply Inc'),
-(2, 'Quantum computing equipment', 85000, 'Quantum Systems Ltd'),
-(3, 'Laboratory supplies', 12500, 'BioLab Suppliers'),
-(4, 'GPU cluster for training', 45000, 'CloudCompute Services'),
-(5, 'Drone components', 8500, 'AeroTech Solutions'),
-(6, 'Security software licenses', 5500, 'SecureNet Corp'),
-(7, 'Solar panel materials', 22000, 'GreenEnergy Supply'),
-(8, 'EEG equipment', 18000, 'MedTech Devices'),
-(9, 'Grid monitoring sensors', 31000, 'SmartGrid Systems'),
-(10, 'Biodegradable polymers', 9500, 'EcoMaterials Ltd');
+(10, 'Environmental testing kit', 3800, 'EcoTest Labs');
